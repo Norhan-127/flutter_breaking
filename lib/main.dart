@@ -8,7 +8,8 @@ void main() {
 class BreakingBad extends StatelessWidget {
   final AppRouter appRouter;
 
-  const BreakingBad(this.appRouter, {super.key}); // This widget is the root of your application.
+  const BreakingBad(this.appRouter,
+      {super.key}); // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,4 +18,3 @@ class BreakingBad extends StatelessWidget {
     );
   }
 }
-
