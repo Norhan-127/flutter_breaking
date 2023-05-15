@@ -15,7 +15,7 @@ class CharactersApi {
     dio = Dio(baseOptions);
   }
 
-  Future<List<Character>> getAllCharacters() async {
+   Future<List<Character>> getAllCharacters() async {
     try {
       Response response = await dio.get('character');
       debugPrint(response.data.toString());
