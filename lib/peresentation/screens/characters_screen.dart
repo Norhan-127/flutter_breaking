@@ -57,15 +57,15 @@ class _CharactersScreenState extends State<CharactersScreen> {
     return GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            childAspectRatio: 2 / 3,
-            crossAxisSpacing: 1,
-            mainAxisSpacing: 1),
+            childAspectRatio: 2.5 / 3,
+            crossAxisSpacing: 2,
+            mainAxisSpacing: 3),
         shrinkWrap: true,
         physics: const ClampingScrollPhysics(),
         padding: EdgeInsets.zero,
+        itemCount: allCharacters.length,
         itemBuilder: (context, index){
-          //toDo: not done
-          return const CharacterItem();
+          return CharacterItem(character: allCharacters[index],);
         }
     );
   }
